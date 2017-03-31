@@ -1,4 +1,5 @@
 var React = require('react')
+var DragImage = require('./drag-image.jsx')
 var { flickrSearch } = require('./model')
 
 var Flickr = React.createClass({
@@ -23,7 +24,7 @@ var Flickr = React.createClass({
     flickrSearch(this.state.term).fork(this.props.showError, this.updateResults)
   },
   render () {
-    var imgs = this.state.results.map(src => <img src={ src } key={ src } />)
+    var imgs = this.state.results.map(p => <DragImage src={ p.src } key={ p.src } />)
 
     return (
       <div id="flickr">

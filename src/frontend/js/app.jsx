@@ -1,5 +1,6 @@
 var React = require('react')
 var Flickr = require('./flickr.jsx')
+var Collage = require('./collage.jsx')
 
 var App = React.createClass({
   displayName: 'App',
@@ -21,8 +22,9 @@ var App = React.createClass({
   render () {
     return (
       <div id="app">
-        { this.state.error ? <p key={ 1 }>{this.state.error}</p> : null }
+        { this.state.error ? <p key={ 1 }>{ this.state.error }</p> : null }
         <Flickr key={ 2 } showError={ this.showError } />
+        <Collage key={ 3 } showError={ this.showError } />
       </div>
     )
   }
