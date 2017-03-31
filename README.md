@@ -1,6 +1,11 @@
+## Functional with React
+
+## Follows
+
+https://github.com/DrBoolean/classroom-coding
+
 ## Feather
 a practical application build with React and pure functional Model
-a drag and drop
 
 ## Install
 
